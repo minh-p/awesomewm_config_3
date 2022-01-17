@@ -1,6 +1,6 @@
 return {
     run_on_start_up = {
-        "picom --experimental-backend",
+        os.getenv("HOME") .. "/.config/autostart"
     },
     defaults = {
         terminal = "kitty",
