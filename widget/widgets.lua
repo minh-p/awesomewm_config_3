@@ -14,7 +14,7 @@ local menubar = require("menubar")
 myawesomemenu = {
    { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
    { "manual", terminal .. " -e man awesome" },
-   { "edit config", editor_cmd .. " " .. awesome.conffile },
+   { "edit config", editor_cmd .. " " .. gears.filesystem.get_configuration_dir()},
    { "restart", awesome.restart },
    { "quit", function() awesome.quit() end },
 }

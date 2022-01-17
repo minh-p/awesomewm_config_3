@@ -8,7 +8,7 @@ require("module.setDefaults")
 require("module.bindings")
 require("module.rules")
 
-require("beautiful").init(require("gears").filesystem.get_configuration_dir() .. "/theme/theme.lua")
+require("beautiful").init(require("gears").filesystem.get_configuration_dir() .. "/themes/macos-dark/theme.lua")
 
 -- consists of bar stuff in layout.screen.
 require("widget.widgets")
