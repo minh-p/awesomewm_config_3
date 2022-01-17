@@ -3,7 +3,7 @@ return {
         "picom --experimental-backend",
     },
     defaults = {
-        terminal = "st",
+        terminal = "kitty",
         editor = "nvim",
         modkey = "Mod4"
     }
