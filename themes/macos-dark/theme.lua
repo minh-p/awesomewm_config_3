@@ -12,7 +12,6 @@
 theme                                           = {}
 
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/macos-dark"
-theme.wallpaper                                 = os.getenv("HOME") .. "/Pictures/wallpapers/leaves.jpg"
 
 theme.font                                      = "SNFS Display UltraLight 8"
 theme.fg_normal                                 = "#ffffff"
