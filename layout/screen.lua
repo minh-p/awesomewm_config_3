@@ -69,6 +69,11 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
+            batteryarc_widget{
+                show_current_level = true,
+                arc_thickness = 1,
+                font = "JetBrains Mono 8"
+            },
             mytextclock,
             s.mylayoutbox,
         },

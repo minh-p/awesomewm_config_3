@@ -67,6 +67,8 @@ taglist_buttons = gears.table.join(
    awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
 )
 
+batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
+
 tasklist_buttons = gears.table.join(
    awful.button(
       { },
