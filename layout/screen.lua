@@ -67,7 +67,11 @@ awful.screen.connect_for_each_screen(function(s)
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
+            spotify_widget({
+                font = 'JetBrains Mono 7',
+                play_icon = '/usr/share/icons/Papirus-Light/24x24/categories/spotify.svg',
+                pause_icon = '/usr/share/icons/Papirus-Dark/24x24/panel/spotify-indicator.svg'
+            }),
             wibox.widget.systray(),
             batteryarc_widget{
                 show_current_level = true,
@@ -76,6 +80,9 @@ awful.screen.connect_for_each_screen(function(s)
             },
             mytextclock,
             s.mylayoutbox,
+            layout = wibox.layout.fixed.horizontal,
+            spacing = 10,
+            visible = true
         },
     }
 end)

@@ -68,6 +68,8 @@ taglist_buttons = gears.table.join(
 )
 
 batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
+spotify_shell = require("awesome-wm-widgets.spotify-shell.spotify-shell")
+spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
 
 tasklist_buttons = gears.table.join(
    awful.button(
